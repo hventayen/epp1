@@ -8,13 +8,26 @@ bool checkAnswer(const string &nameOfTest, bool received, bool expected);
 bool checkAnswer(const string &nameOfTest, int received, int expected);
 
 // Implement printString here
-
-
-
+void printString(string t)
+{
+  for (int i = 0; i < t.size(); i++)
+  {
+    std::cout << t[i] << " \n";
+  }
+}
 // Implement countChars here
-
-
-
+int countChars(string z, char c)
+{
+  int count = 0;
+  for (int j = 0; j < z.size(); j++)
+  {
+    if (z[j] == c)
+    {
+      count++;
+    }
+  }
+  return count;
+}
 // EDIT CODE BELOW *ONLY* FOR TESTING (ANY CODE BELOW WILL BE OVER-WRITTEN DURING GRADING WITH DIFFERENT TESTS)
 
 int main() {
